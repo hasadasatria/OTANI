@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 06 Jan 2022 pada 17.03
+-- Waktu pembuatan: 01 Feb 2022 pada 16.04
 -- Versi server: 10.4.18-MariaDB
 -- Versi PHP: 8.0.3
 
@@ -39,7 +39,12 @@ CREATE TABLE `produk` (
 --
 
 INSERT INTO `produk` (`id_produk`, `judul`, `isi`, `foto_produk`) VALUES
-(16, 'Cabe Merah', 'Rp. 38.000', 'cabe merah.jpg');
+(16, 'Cabai Merah', 'Rp. 38.000', 'cabe merah.jpg'),
+(17, 'Jagung', 'Rp. 12.000', 'jagung.jpg'),
+(18, 'Beras', 'Rp. 11.000', 'beras.jpg'),
+(19, 'Kacang Merah', 'Rp. 32.000', 'kacang merah.jpg'),
+(20, 'Cabai Rawit', 'Rp. 55.000', 'rawit.jpg'),
+(21, 'Tomat', 'Rp. 14.000', 'tomat.jpg');
 
 -- --------------------------------------------------------
 
@@ -59,7 +64,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id_user`, `username`, `password`, `role`) VALUES
-(6, 'strr', 'satria123', 0);
+(6, 'admin', 'admin', 0);
 
 --
 -- Indexes for dumped tables
@@ -85,7 +90,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT untuk tabel `produk`
 --
 ALTER TABLE `produk`
-  MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT untuk tabel `user`
